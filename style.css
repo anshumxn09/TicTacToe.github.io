@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color :turquoise;
+    --bg-color: whitesmoke;
+}
+
+body{
+    position: relative;
+}
+.__playerBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: url('https://cdna.artstation.com/p/assets/images/images/010/294/984/large/michaela-bedard-michaelab-bg-kidvskat.jpg?1523644402');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.__playingBox{
+    display: flex;
+    flex-direction: column;
+    width: 42vw;
+    height: 60vh;
+}
+
+.firstRow, .secondRow, .thirdRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 20vh;
+    width: max-content;
+}
+button{
+    outline: none;
+    margin: 0px;
+    cursor: pointer;
+    width: 14vw;
+    height: 20vh;
+}
+
+#A1, #A2, #A4, #A5{
+    border: none;
+    border-right: 5px groove var(--color);
+    border-bottom: 5px groove var(--color);
+    background-color: var(--bg-color);
+}
+
+#A7, #A8{
+    border: none;
+    border-right: 5px groove var(--color);
+    background-color: var(--bg-color);
+}
+
+#A3, #A6{
+    border: none;
+    border-bottom: 5px groove var(--color);
+    background-color: var(--bg-color);
+}
+
+#A9{
+    border: none;
+    background-color: var(--bg-color);
+}
+
+#winStatus{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    bottom: 0;
+    background:linear-gradient(olivedrab, green);
+}
+
+#winnerName{
+    color: white;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+@media screen and (max-width: 920px) {
+    .__playingBox{
+        width: 81vw;
+        height: 51vh;
+    }
+    .firstRow, .secondRow, .thirdRow{
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: max-content;
+    }
+    button{
+        margin: 0px;
+        width: 27vw;
+        height: 17vh;
+    }
+  }
+
