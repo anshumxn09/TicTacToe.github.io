@@ -1,0 +1,2 @@
+# TicTacToe.github.io
+'Tic Tac Toe' is one of the game we used to play alot in our childhood or sometimes now also, to understand it's logic programmatically i have implement it in HTML, CSS, JS. Most of us use X and O to play but when we have power of programming then we can modified however we like. So in my game i have used two characters (DR. K, COOP from kid vs kat cartoon) to represent X and O in the game, it was a great fun while coding this game along with our favourite cartoon characters and understood the logic how does it work in the programming world.
